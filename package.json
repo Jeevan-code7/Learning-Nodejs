@@ -1,0 +1,24 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Learning Nodejs",
+  "homepage": "https://github.com/Jeevan-code7/Learning-Nodejs#readme",
+  "bugs": {
+    "url": "https://github.com/Jeevan-code7/Learning-Nodejs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeevan-code7/Learning-Nodejs.git"
+  },
+  "license": "ISC",
+  "author": "Jeevan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
