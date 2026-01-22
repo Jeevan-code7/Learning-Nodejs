@@ -115,3 +115,30 @@ In short
   Examples: npm install -g nodemon, npm install -g npm
   Installed once, reusable across all projects
   Not added to package.json
+
+-Why we add package.json to Git
+
+It defines project metadata (name, scripts, dependencies).
+Tells others what packages the project needs.
+Allows anyone to install dependencies using npm install.
+Mandatory to upload for any Node/React project.
+-Why we add package-lock.json to Git
+
+It locks the exact versions of installed dependencies.
+Ensures same behavior across all machines (no “works on my system” issues).
+Improves faster and consistent installs.
+Prevents unexpected bugs from version changes.
+
+-Why we need both
+
+package.json → what dependencies are required.
+package-lock.json → exactly which versions are used.
+Together they guarantee reproducible builds.
+Is it mandatory to upload both?
+
+package.json → Always mandatory
+package-lock.json → Strongly recommended (almost mandatory in real projects)
+❌ Do NOT upload
+node_modules/ (it’s regenerated from these two files)
+One-line interview answer:
+We commit package.json to define dependencies and package-lock.json to lock exact versions so that the project behaves consistently across environments.
