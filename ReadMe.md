@@ -142,3 +142,20 @@ package-lock.json → Strongly recommended (almost mandatory in real projects)
 node_modules/ (it’s regenerated from these two files)
 One-line interview answer:
 We commit package.json to define dependencies and package-lock.json to lock exact versions so that the project behaves consistently across environments.
+
+Route Handler == (req,res)=>{
+we dont send anything from this like(responce) when we saw in the postMan it always shows the sending request which means it goes infinite loop
+}
+
+const express = require("express");
+const app = express();
+app.use("/user", ()=>{
+res.send("make request to the server")
+})
+
+app.listen(3000 , ()=>{
+console.log("server started -->")
+})
+
+In (app.use) we can use multiple route handlers we want and also we can wrap it route handlers in an array [Rh1 . Rh2 , Rh 3] Like this
+it will work same as how the mutltiple route handlers works

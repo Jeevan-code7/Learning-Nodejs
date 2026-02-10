@@ -1,0 +1,3 @@
+- create mutliple Route handler and play with that
+- next()
+- next funtion and errors along with res.send
