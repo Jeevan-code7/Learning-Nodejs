@@ -1,3 +1,7 @@
 - create mutliple Route handler and play with that
 - next()
 - next funtion and errors along with res.send
+- what is middleware
+- how express js bsically handles request behind the scenes
+- what is the difference between the app.use and app.all
+-
