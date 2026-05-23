@@ -6,9 +6,12 @@ app.use(express.json());
 const connectDB = require("./config/data");
 const User = require("./models/userModel");
 
+app.get("/login", (req, res) => {
+  res.send("Hello User😘😘😘😘");
+});
+
 app.get("/user", async (req, res) => {
   const userData = req.body.email;
-
   try {
     const user = await User.find({});
     console.log(user);
@@ -18,15 +21,15 @@ app.get("/user", async (req, res) => {
   }
 });
 
-// app.post("/signup", async (req, res) => {
-//   const userData = new User(req.body);
-//   try {
-//     await userData.save();
-//     res.status(200).send("data added successfully in database");
-//   } catch (err) {
-//     console.log("error occured", err);
-//   }
-// });
+app.post("/signup", async (req, res) => {
+  const userData = new User(req.body);
+  try {
+    await userData.save();
+    res.status(200).send("data added successfully in database");
+  } catch (err) {
+    console.log("error occured", err);
+  }
+});
 
 connectDB()
   .then(() => {
