@@ -51,25 +51,42 @@
 //memoization
 
 // stale closures
-function Family() {
-  let savings = 100000;
-  let mySavings = `hello ! my savings is ${savings}`;
+// function Family() {
+//   let savings = 100000;
+//   let mySavings = `hello ! my savings is ${savings}`;
+//
+//   function restarent() {
+//     savings = savings - 5000;
+//     console.log("i spent 5000 for my faminly dinner !");
+//   }
+//   function afterMyMoney() {
+//     return savings;
+//   }
+//   return { restarent, afterMyMoney };
+// }
+//
+// const moneySpent = Family();
+//
+// moneySpent.restarent();
+// moneySpent.restarent();
+// moneySpent.restarent();
+// moneySpent.restarent();
+// moneySpent.restarent();
+// console.log(moneySpent.afterMyMoney());
 
-  function restarent() {
-    savings = savings - 5000;
-    console.log("i spent 5000 for my faminly dinner !");
-  }
-  function afterMyMoney() {
-    return savings;
-  }
-  return { restarent, afterMyMoney };
-}
+const products = [
+    {
+        id: 1,
+        name: "mouse",
+        price: 20,
+    },
+    {
+        id: 2,
+        name: "laptop",
+        price: 900,
+    },
+    { id: 3, name: "keyboard", price: 40 },
+];
 
-const moneySpent = Family();
 
-moneySpent.restarent();
-moneySpent.restarent();
-moneySpent.restarent();
-moneySpent.restarent();
-moneySpent.restarent();
-console.log(moneySpent.afterMyMoney());
+c
