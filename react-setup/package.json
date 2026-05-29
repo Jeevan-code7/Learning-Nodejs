@@ -12,6 +12,10 @@
   "type": "commonjs",
   "dependencies": {
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "webpack": "^5.107.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^7.0.3"
   }
 }
