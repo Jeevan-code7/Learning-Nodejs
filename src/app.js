@@ -6,8 +6,14 @@ app.use(express.json());
 const connectDB = require("./config/data");
 const User = require("./models/userModel");
 
+app.use("/go", (req, res) => {
+
+  res.send("tommorrow im going to match")
+
+})
+
 app.get("/login", (req, res) => {
-  res.send("Hello User😘😘😘😘");
+  res.send("Hello User");
 });
 
 app.get("/user", async (req, res) => {

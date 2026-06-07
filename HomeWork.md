@@ -5,6 +5,15 @@
 - how express js bsically handles request behind the scenes
 - what is the difference between the app.use and app.all
 
+  // connecting to Database
+
+- create a free cluster on mongo db official website (MongoDB Atlas)
+- install mongoose library
+- connect your application to the database
+- call the connection DB function and connect to the database before starting your application on port
+- create a userSchema & userModel
+-
+
 // password hashing
 
 - validate data in sign up API

@@ -1,5 +1,4 @@
 const admin = (req, res, next) => {
-  console.log("oyammoooo");
   const isToken = "xyz";
   const isAuthorized = isToken === "xyz";
   if (!isAuthorized) {
